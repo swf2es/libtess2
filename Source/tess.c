@@ -53,7 +53,7 @@ static void Normalize( TESSreal v[3] )
 	TESSreal len = v[0]*v[0] + v[1]*v[1] + v[2]*v[2];
 
 	assert( len > 0 );
-	len = sqrtf( len );
+	len = sqrt( len );
 	v[0] /= len;
 	v[1] /= len;
 	v[2] /= len;
